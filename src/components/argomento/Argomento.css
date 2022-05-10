@@ -1,0 +1,19 @@
+  .argomento {
+    display: flex;
+    flex-direction: column;
+    text-align: left;  
+    position: relative;
+    top: 100vh;
+    min-height: 100vh;
+    padding-top: 16vh;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  p {
+    text-align: start;
+    width: fit-content;
+    color: white;
+}
