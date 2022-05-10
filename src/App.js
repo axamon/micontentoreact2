@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Title titolo="MiContento" />
       <div className='main'>
-        <ReactPlayer  playing muted loop url={[{src: {video}, type: 'video/mp4'}]} />
+        <ReactPlayer  playing muted loop url={[{src: 'video.mp4', type: 'video/mp4'}]} />
       </div>
       <Argomento name="Contatti" />
       <Argomento name="Sportello" />
