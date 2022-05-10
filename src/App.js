@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
+import ReactPlayer from 'react-player/lazy'
+
 import video from './video.mp4';
 import Title from './components/title/Title';
 import Argomento from './components/argomento/Argomento';
@@ -11,10 +13,12 @@ function App() {
     <div className="App">
       <Title titolo="MiContento" />
       <div className='main'>
-        <video src={video} loop muted autoPlay />
-        </div>
-        <Argomento name="Contatti" />
-        <Footer owner="MiContento" />
+        <ReactPlayer width={1000} playing muted loop url={[{src: 'video.mp4', type: 'video/mp4'}]} />
+      </div>
+      <Argomento name="Contatti" />
+      <Argomento name="Sportello" />
+      <Argomento name="GPT" />
+      <Footer owner="MiContento" />
     </div>
   );
 }
