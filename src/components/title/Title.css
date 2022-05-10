@@ -1,7 +1,6 @@
 
-a {
-    color: white;
-    
+.titolo a {
+    color: white; 
 }
 
 .titolo>a:link { text-decoration: none; }
@@ -26,5 +25,5 @@ a {
 }
 
 .titolo small {
-    font-size: clamp(1rem, 1.5vw, 3rem);  
+    font-size: clamp(0.5em, 1.5vw, 3rem);  
 }
