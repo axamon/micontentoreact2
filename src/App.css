@@ -26,6 +26,37 @@ body {
  height: 200vh;
 }
 
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.video-wrapper {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #000;
+  /* width: 400px;
+  height: 200px; */
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header{
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+}
+
 /* #myVideo {
   position: relative;
   right: 0;
@@ -34,10 +65,10 @@ body {
   min-height: 100%;
 } */
 
-video {
+/* video {
   position: relative;
   display: flex;
-}
+} */
 
 .App-logo {
   height: 40vmin;
