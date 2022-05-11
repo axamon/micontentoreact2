@@ -18,28 +18,39 @@ body{
 .line-1{
     position: relative;
     top: 50%;  
-    width: 24em;
+    width: 20em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 100%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
+    width: fit-content;
     transform: translateY(-50%);    
 }
 
 /* Animation */
 .anim-typewriter{
-  animation: typewriter 7s steps(25) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+  width: fit-content;
+  animation: typewriter 7s steps(20) 1s 1 normal both,
+             blinkTextCursor 500ms steps(20) infinite normal,
+             12s smetti 1s normal forwards;
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 24em;}
+  to{width: 15em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
+}
+
+@keyframes smetti {
+  100% { 
+      /* opacity: 0; */
+      animation-play-state: paused;
+      border-right-color: transparent;
+  }
 }
 
 .typewriter {
@@ -103,12 +114,7 @@ body{
     }
   }
 
-  @keyframes smetti {
-    100% { 
-        opacity: 0;
-        animation-play-state: paused;
-    }
-  }
+
   
   .typewriter {
     position: relative;

@@ -51,6 +51,16 @@ video {
   align-items: center;
   justify-content: center;
 }
+
+.quote {
+  position: absolute;
+  max-width: 60vw;
+  /* width: 50vw; */
+  top: 530px;
+
+  text-align: left;
+}
+
 .header{
   position: relative;
   color: white;
