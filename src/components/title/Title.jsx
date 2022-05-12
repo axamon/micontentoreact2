@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import "./Title.css";
+import Typewriter from "../typewriter/Typewriter"
 
 export default class Title extends Component {
 
@@ -7,13 +8,9 @@ export default class Title extends Component {
     const { titolo = "Titolo" } = this.props;
     return (
       <div className='titolo'>
-        <a href="#">{titolo}</a>
+        <u><a href="#">{titolo}</a></u>
         <br></br>
-        <small>
-          <span><a  href="#Contatti">Contatti</a>  | </span>
-          <span><a  href="#Sportello">Sportello</a> |  </span>
-          <span><a  href="#GPT">GPT</a></span>
-        </small>
+        <small id="senso" className="mt-4"><Typewriter text="Unità di misura di senso"/></small>
       </div>
     )
   }

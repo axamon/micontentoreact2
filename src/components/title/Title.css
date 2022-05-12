@@ -3,27 +3,32 @@
     color: white; 
 }
 
-.titolo>a:link { text-decoration: none; }
+/* .titolo>a:link { text-decoration: none; } */
 
 
 .titolo>a:visited { text-decoration: none; }
 
 
-.titolo>a:hover { text-decoration: none; }
+/* .titolo>a:hover { text-decoration: none; } */
 
 
-.titolo>a:active { text-decoration: none; }
+/* .titolo>a:active { text-decoration: none; } */
 
 .titolo {
     z-index: 100;
-    position: fixed;
-    top: 1vh;
-    left: 2vw;
-    font-size: clamp(1.5rem, 2.5vw, 4rem); 
+    text-align: center;
+    position: relative;
+    top: 3vh;
+    /* left: 2vw; */
+    font-size: clamp(2.8rem, 10vw, 80.5rem); 
     font: bolder;
     color: white;
 }
 
+#senso {
+    margin-top: 300px;
+}
+
 .titolo small {
-    font-size: clamp(0.5em, 1.5vw, 3rem);  
+    font-size: clamp(0.5em, 2.5vw, 3rem);  
 }

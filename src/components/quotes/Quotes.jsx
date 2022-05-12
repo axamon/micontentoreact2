@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './Quotes.css';
 import quotes from './dbQuotes'
 
-function randomQuote() {
+function randomQuote()  {
     const randomNumber = Math.floor(Math.random() * quotes.length);
     console.log(quotes[randomNumber])
 
@@ -14,7 +14,11 @@ function randomQuote() {
 export default class Quotes extends Component {
   render() {
 
-    const num = randomQuote()
+    const generateRandomQuote = this.randomQuote();
+    this.setState({
+      quote: generateRandomQuote.quote,
+      author: generateRandomQuote.author
+    });
 
     return (
       <div>Quotes {num}</div>

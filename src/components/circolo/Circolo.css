@@ -1,8 +1,8 @@
 .circolo-wrapper {
-    width:501px;
-    height:501px;
+    width:481px;
+    height:481px;
     border-radius:51%;
-    background: transparent;
+    background: red;
     position:relative;
     margin:100px;
     /* animation: ruota;
@@ -12,12 +12,13 @@
  }
  
  .circolo {
+    z-index: 1000;
     display:block;
     position:absolute;
     top:51%;
     left:51%;
-    width: 100px;
-    height: 100px;
+    width: 15px;
+    height: 15px;
     margin:-51px;
     background:red;
     border-radius:51%;
@@ -46,52 +47,48 @@
 }
  
  .deg-0 {
-    background-color: aqua;
-    transform:  translate(251px) ;
+    background-color: yellow;
+    transform:  translate(151px) ;
     animation-play-state: paused;
  }
-/* 
- .deg-0:hover {
-     animation-fill-mode: forwards;
- } */
- 
+
  .deg-45 {
-    background-color: red;
-    transform:rotate(46deg) translate(251px) rotate(-46deg);
+    background-color: yellow;
+    transform:rotate(46deg) translate(151px) rotate(-46deg);
  }
  
  .deg-90 {
-    background-color: blueviolet;
+    background-color: yellow;
 
-    transform:rotate(91deg) translate(251px) rotate(-91deg);
+    transform:rotate(91deg) translate(151px) rotate(-91deg);
  }
  
  .deg-135 {
     background-color: yellow;
 
-    transform:rotate(136deg) translate(251px) rotate(-136deg);
+    transform:rotate(136deg) translate(151px) rotate(-136deg);
  }
  
  .deg-180 {
-    background-color: cyan;
+    background-color: yellow;
 
-    transform:rotate(181deg) translate(251px) rotate(-181deg);
+    transform:rotate(181deg) translate(151px) rotate(-181deg);
  }
  
  .deg-225 {
-    background-color: green;
-    transform:rotate(226deg) translate(251px) rotate(-226deg);
+    background-color: yellow;
+    transform:rotate(226deg) translate(151px) rotate(-226deg);
  }
  
  .deg-270 {
-    background-color: pink;
+    background-color: yellow;
 
-    transform:rotate(271deg) translate(251px) rotate(-271deg);
+    transform:rotate(271deg) translate(151px) rotate(-271deg);
  }
  
  .deg-315 {
-    background-color: lightsalmon;
-    transform:rotate(316deg) translate(251px) rotate(-316deg);
+    background-color: yellow;
+    transform:rotate(316deg) translate(151px) rotate(-316deg);
  }
 
 
